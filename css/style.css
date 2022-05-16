@@ -39,6 +39,10 @@ a {
     display: none;
 }
 
+ul {
+    list-style-type: none;
+}
+
 /* *************************************************************
                             MAIN
 ************************************************************* */
@@ -94,10 +98,6 @@ aside {
 .playlist {
     padding-left: 22px;
     overflow-y: hidden;
-}
-
-.playlist ul {
-    list-style-type: none;
 }
 
 .new-playlist i {
@@ -160,7 +160,6 @@ aside a:hover {
     width: calc(100% - 250px);
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
-    overflow-x: hidden;
     text-align: right;
 }
 
@@ -181,6 +180,28 @@ aside a:hover {
     overflow-y: auto;
 }
 
+/* nav */
+
+nav {
+    width: 50%;
+    margin: 10px auto;
+}
+
+nav > ul {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    font-size: 14px;
+}
+
+nav li {
+    padding: 10px;
+}
+
+li span {
+    padding-bottom: 5px;
+    border-bottom: 3px solid #adff2f;
+    
+}
 
 /* *************************************************************
                             FOOTER
