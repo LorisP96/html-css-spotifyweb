@@ -43,6 +43,14 @@ ul {
     list-style-type: none;
 }
 
+h2 {
+    padding: 25px 25px;
+}
+
+h3 {
+    font-size: 15px;
+}
+
 /* *************************************************************
                             MAIN
 ************************************************************* */
@@ -177,14 +185,13 @@ aside a:hover {
     color: grey;
     background-color: #141922;
     padding-top: 100px;
-    overflow-y: auto;
 }
 
 /* nav */
 
 nav {
     width: 50%;
-    margin: 10px auto;
+    margin: 10px auto 30px;
 }
 
 nav > ul {
@@ -195,6 +202,7 @@ nav > ul {
 
 nav li {
     padding: 10px;
+    font-weight: 700;
 }
 
 li span {
@@ -203,6 +211,49 @@ li span {
     
 }
 
+/* recently played */
+
+.container {
+    padding: 25px;
+    background-color: lightblue;
+    overflow-y: auto;
+}
+
+.played > .container {
+    padding-top: 0;
+}
+
+.col {
+    background-color: aquamarine;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: calc((100% / 6) - 10px);
+    margin: 0 5px 5px 5px;
+    background-color: pink;
+}
+
+.card:first-child {
+    margin-left: 0;
+}
+
+.card:last-child {
+    margin-right: 0;
+}
+
+.card > img {
+    width: 100%;
+    height: auto;
+}
+
+.info-card {
+    text-align: center;
+}
+
+.info-card > div {
+    font-size: 12px;
+}
 /* *************************************************************
                             FOOTER
 ************************************************************* */
@@ -218,12 +269,51 @@ footer {
 /* *************************************************************
                             TABLET
 ************************************************************* */
+@media screen and (max-width: 1100px) {
+    .card {
+        width: calc( (100% / 4) - 10px);
+        margin: 0 5px 5px 5px;
+    }
+    
+    .card:nth-child(4) {
+        margin-right: 0;
+    }
 
+    .card:nth-child(5) {
+        margin-left: 0;
+    }
+}
 
 /* *************************************************************
                         LARGE MOBILE
 ************************************************************* */
 
+@media screen and (max-width: 700px) {
+    .card {
+        width: calc( (100% / 2) - 5px);
+        margin: 0 5px 5px 5px;
+    }
+    
+    .card:nth-child(2) {
+        margin-right: 0;
+    }
+
+    .card:nth-child(3) {
+        margin-left: 0;
+    }
+
+    .card:nth-child(4) {
+        margin-right: 0;
+    }
+
+    .card:nth-child(5) {
+        margin-left: 0;
+    }
+
+    .card:nth-child(6) {
+        margin-right: 0;
+    }
+}
 
 /* *************************************************************
                         SMALL MOBILE
