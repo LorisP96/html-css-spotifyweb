@@ -44,11 +44,13 @@ main {
 
 aside {
     width: 250px;
+    color: #a3a3a3;
     background-color: black;
     min-width: 75px;
     overflow-y: hidden;
     font-size: 15px;
     line-height: 35px;
+    position: relative;
 }
 
 /* logo section */
@@ -59,17 +61,16 @@ aside {
 
 .logo img {
     height: 40px;
-    margin: 15px 22px;
+    margin: 15px 22px;*
 }
 
 /* home section */
 .home {
     width: 100%;
-    color: #a3a3a3;
 }
 
 .home img {
-    height: 30px;
+    height: 28px;
     padding-right: 5px;
     vertical-align: middle;
 }
@@ -86,7 +87,6 @@ aside {
 /* playlist */
 .playlist {
     padding-left: 22px;
-    color: #a3a3a3;
 }
 
 .playlist ul {
@@ -101,6 +101,41 @@ aside {
 
 .new-playlist {
     font-size: 17px;
+}
+
+/* download */
+.download-account {
+    width: 100%;
+    padding: 10px 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.download img {
+    height: 20px;
+    vertical-align: middle;
+    padding-right: 10px;
+}
+
+.download hr {
+    color: #a3a3a3;
+    width: 100%;
+}
+
+/* account */
+.account {
+    width: 100%;
+    padding: 10px 0 0 20px;
+}
+
+.account img {
+    height: 20px;
+    padding-right: 10px;
+}
+
+aside a:hover {
+    color: white;
 }
 
 /* main content */
@@ -188,5 +223,29 @@ footer {
     .show-desktop {
         display: none;
     }
-    
+
+    /* aside */
+    .home {
+        padding: 0;
+    }
+
+    .home div, .home .white {
+        padding: 0;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .home img {
+        padding: 0;
+    }
+
+    .logo img {
+        margin: 10px auto;
+    }
+
+    .download div {
+        padding: 0;
+        text-align: center;
+        margin: auto;
+    }
 }
