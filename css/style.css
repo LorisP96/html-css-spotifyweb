@@ -7,14 +7,22 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+/* COMMON */
+
 .flex-cont {
     display: flex;
 }
+
+/* *************************************************************
+                            MAIN
+************************************************************* */
 
 main {
     width: 100%;
     height: calc(100vh - 100px);
 }
+
+/* aside */
 
 aside {
     width: 300px;
@@ -23,11 +31,29 @@ aside {
 
 }
 
+/* main content */
+
 .main-content {
     width: calc(100% - 300px);
     background-color: lightgreen;
     min-width: 525px;
+    padding-top: 100px;
 }
+
+.upgrade-banner {
+    color: white;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: calc(100% - 300px);
+    min-width: 525px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* *************************************************************
+                            FOOTER
+************************************************************* */
 
 footer {
     width: 100%;
