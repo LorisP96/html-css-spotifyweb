@@ -7,6 +7,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+:root {
+    --grey: #a3a3a3;
+}
+
 /* COMMON */
 
 main {
@@ -44,14 +48,14 @@ main {
     height: calc(100vh - 100px);
 }
 
-/* aside */
+/************************* aside *******************************/
 
 aside {
     width: 250px;
-    color: #a3a3a3;
+    color: grey;
     background-color: black;
-    font-size: 15px;
-    line-height: 35px;
+    font-size: 14px;
+    line-height: 38px;
     position: relative;
 }
 
@@ -123,7 +127,7 @@ aside {
 }
 
 .download hr {
-    color: #a3a3a3;
+    color: grey;
     width: 100%;
 }
 
@@ -138,7 +142,7 @@ aside {
     height: 25px;
     vertical-align: middle;
     margin-right: 10px;
-    background-color: #a3a3a3;
+    background-color: grey;
     border-radius: 50%;
 }
 
@@ -146,14 +150,7 @@ aside a:hover {
     color: white;
 }
 
-/* main content */
-
-.main-content {
-    width: calc(100% - 250px);
-    background-color: lightgreen;
-    padding-top: 100px;
-    overflow-y: auto;
-}
+/********************  upgrade banner *************************/
 
 .upgrade-banner {
     height: 100px;
@@ -164,7 +161,26 @@ aside a:hover {
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
     overflow-x: hidden;
+    text-align: right;
 }
+
+.button {
+    display: inline-block;
+    border: 1px solid white;
+    padding: 10px 25px;
+    border-radius: 20px;
+    margin: 29px 5px;
+}
+/**********************  main content *************************/
+
+.main-content {
+    width: calc(100% - 250px);
+    color: grey;
+    background-color: #141922;
+    padding-top: 100px;
+    overflow-y: auto;
+}
+
 
 /* *************************************************************
                             FOOTER
