@@ -28,7 +28,7 @@ aside {
     width: 300px;
     background-color: lightcyan;
     min-width: 75px;
-
+    overflow-y: hidden;
 }
 
 /* main content */
@@ -38,6 +38,7 @@ aside {
     background-color: lightgreen;
     min-width: 525px;
     padding-top: 100px;
+    overflow-y: auto;
 }
 
 .upgrade-banner {
@@ -61,3 +62,39 @@ footer {
     min-width: 600px;
     background-color: pink;
 }
+
+/* *************************************************************
+                            TABLET
+************************************************************* */
+
+@media screen and (max-with: 1100px) {
+    .main-content {
+        width: calc(100% - 300px);
+        min-width: 525px;
+    }
+
+    aside {
+        width: 300px;
+    }
+
+}
+
+/* *************************************************************
+                        LARGE MOBILE
+************************************************************* */
+
+@media screen and (max-with: 700px) {
+    .main-content {
+        width: calc(100% - 300px);
+        min-width: 525px;
+    }
+
+    aside {
+        width: 300px;
+    }
+
+}
+
+/* *************************************************************
+                        SMALL MOBILE
+************************************************************* */
