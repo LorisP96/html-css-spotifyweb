@@ -68,7 +68,7 @@ aside {
     background-color: black;
     font-size: 14px;
     line-height: 38px;
-    position: relative;
+    flex-direction: column;
 }
 
 /* logo section */
@@ -105,7 +105,9 @@ aside {
 /* playlist */
 .playlist {
     padding-left: 22px;
-    overflow-y: hidden;
+    flex-grow: 1;
+    min-height: 150px;
+    overflow-y: auto;
 }
 
 .new-playlist i {
@@ -122,10 +124,6 @@ aside {
 .download-account {
     width: 100%;
     padding: 10px 20px;
-    background-color: black;
-    position: absolute;
-    bottom: 0;
-    left: 0;
 }
 
 .download img {
@@ -283,6 +281,8 @@ footer {
     .card:nth-child(5) {
         margin-left: 0;
     }
+
+    
 }
 
 /* *************************************************************
