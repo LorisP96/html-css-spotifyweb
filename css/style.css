@@ -252,7 +252,7 @@ li span {
     height: auto;
 }
 
-.info-card {
+.card > .info-card {
     text-align: center;
     height: 75px;
     overflow: hidden;
@@ -300,16 +300,17 @@ footer > .flex-cont {
 }
 
 footer section {
-    background-color: pink;
     padding: 0 10px;
     width: calc(100% / 3);
 }
+
 
 .foot-left, .foot-right {
     height: 65%;
     align-items: center;
 }
 
+/* foot left */
 .foot-left > div {
     padding: 0 10px;
 }
@@ -318,6 +319,7 @@ footer section {
     padding: 0 10px;
 }
 
+/* foot mid */
 .foot-mid {
     height: 80%;
     text-align: center;
@@ -337,16 +339,46 @@ footer section {
     font-size: 30px;
 }
 
-.foot-mid hr {
+.foot-mid span {
+    font-size: 11px;
+}
+
+.foot-mid > .flex-cont {
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.foot-mid .bar {
     width: 70%;
-    padding-left: 15%;
-    display: inline-block;
-    vertical-align: middle;
+    height: 1px;
+}
+
+.hr-small {
+    width: 30%;
     border: 1px solid white;
 }
 
-.foot-mid span {
-    font-size: 11px;
+.hr-big {
+    width: 70%;
+    border: 1px solid var(--grey);
+}
+
+/* foot right */
+.foot-right > .flex-cont {
+    width: 100%;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.foot-right .bar {
+    width: 100px;
+    height: 1px;
+}
+
+.foot-right i {
+    padding: 0 10px;
 }
 
 /* *************************************************************
@@ -388,6 +420,10 @@ footer section {
 
     .foot-mid i {
         padding: 10px 5px;
+    }
+
+    .foot-right i {
+        padding: 0 5px;
     }
 }
 
