@@ -181,7 +181,11 @@ aside a:hover {
     border: 1px solid white;
     padding: 10px 25px;
     border-radius: 20px;
-    margin: 29px 5px;
+    margin: 29px 29px;
+}
+
+.button:hover {
+    transform: scale(105%);
 }
 
 /**********************  main content *************************/
@@ -218,6 +222,10 @@ li span {
     
 }
 
+nav a:hover {
+    color: white;
+}
+
 /* recently played */
 
 .container {
@@ -236,6 +244,7 @@ li span {
 .card {
     width: calc((100% / 6) - 10px);
     margin: 0 5px 5px 5px;
+    position: relative;
 }
 
 .card:first-child {
@@ -279,6 +288,51 @@ li span {
     border-radius: 50%;
 }
 
+/************************* overlay *****************************/
+
+.played .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+    width: 100%; 
+    height: calc(100% - 75px); 
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+
+.for-user .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+    width: 100%; 
+    height: calc(100% - 35px); 
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+
+.popular .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+    width: 100%; 
+    height: calc(100% - 35px); 
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+    border-radius: 50%;
+}
+
+.overlay > i {
+    font-size: 50px;
+}
+
+.card:hover .overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /* *************************************************************
                             FOOTER
 ************************************************************* */
@@ -343,6 +397,10 @@ footer i:hover {
     font-size: 30px;
 }
 
+.play-button:hover > i {
+    transform: scale(110%);
+}
+
 .foot-mid span {
     font-size: 11px;
 }
@@ -355,17 +413,17 @@ footer i:hover {
 
 .foot-mid .bar {
     width: 70%;
-    height: 1px;
+    height: 2px;
 }
 
 .hr-small {
     width: 30%;
-    border: 1px solid white;
+    border: 2px solid white;
 }
 
 .hr-big {
     width: 70%;
-    border: 1px solid var(--grey);
+    border: 2px solid var(--grey);
 }
 
 /* foot right */
@@ -378,11 +436,15 @@ footer i:hover {
 
 .foot-right .bar {
     width: 100px;
-    height: 1px;
+    height: 2px;
 }
 
 .foot-right i {
     padding: 0 10px;
+}
+
+.bar:hover > .hr-small {
+    border: 2px solid #adff2f;
 }
 
 /* *************************************************************
