@@ -91,6 +91,15 @@ aside {
     height: 28px;
     padding-right: 5px;
     vertical-align: middle;
+    filter: opacity(0.4);
+}
+
+.home > .white img {
+    filter: opacity(1);
+}
+
+.home  a:hover img {
+    filter: opacity(1);
 }
 
 .home div {
