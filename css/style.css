@@ -301,14 +301,52 @@ footer > .flex-cont {
 
 footer section {
     background-color: pink;
+    padding: 0 10px;
+    width: calc(100% / 3);
 }
 
 .foot-left, .foot-right {
     height: 65%;
+    align-items: center;
+}
+
+.foot-left > div {
+    padding: 0 10px;
+}
+
+.foot-left i {
+    padding: 0 10px;
 }
 
 .foot-mid {
     height: 80%;
+    text-align: center;
+}
+
+.foot-mid > div {
+    width: 100%;
+}
+
+.foot-mid i {
+    padding: 10px 10px;
+    font-size: 20px;
+    vertical-align: middle ;
+}
+
+.foot-mid i:nth-child(3) {
+    font-size: 30px;
+}
+
+.foot-mid hr {
+    width: 70%;
+    padding-left: 15%;
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px solid white;
+}
+
+.foot-mid span {
+    font-size: 11px;
 }
 
 /* *************************************************************
@@ -327,7 +365,6 @@ footer section {
     .card:nth-child(5) {
         margin-left: 0;
     }
-
     
 }
 
@@ -347,6 +384,10 @@ footer section {
 
     .card:nth-child(odd) {
         margin-left: 0;
+    }
+
+    .foot-mid i {
+        padding: 10px 5px;
     }
 }
 
