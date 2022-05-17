@@ -185,6 +185,7 @@ aside a:hover {
     color: grey;
     background-color: #141922;
     padding-top: 100px;
+    overflow-y: auto;
 }
 
 /* nav */
@@ -294,24 +295,12 @@ footer {
         margin: 0 5px 5px 5px;
     }
     
-    .card:nth-child(2) {
+    .card:nth-child(even) {
         margin-right: 0;
     }
 
-    .card:nth-child(3) {
+    .card:nth-child(odd) {
         margin-left: 0;
-    }
-
-    .card:nth-child(4) {
-        margin-right: 0;
-    }
-
-    .card:nth-child(5) {
-        margin-left: 0;
-    }
-
-    .card:nth-child(6) {
-        margin-right: 0;
     }
 }
 
