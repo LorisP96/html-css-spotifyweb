@@ -310,6 +310,10 @@ footer section {
     align-items: center;
 }
 
+footer i:hover {
+    color: white;
+}
+
 /* foot left */
 .foot-left > div {
     padding: 0 10px;
@@ -335,7 +339,7 @@ footer section {
     vertical-align: middle ;
 }
 
-.foot-mid i:nth-child(3) {
+.play-button > i {
     font-size: 30px;
 }
 
