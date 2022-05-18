@@ -189,7 +189,7 @@ aside a:hover {
 }
 
 .button:hover {
-    transform: scale(105%);
+    transform: scale(1.05);
 }
 
 /**********************  main content *************************/
@@ -402,7 +402,7 @@ footer i:hover {
 }
 
 .play-button:hover > i {
-    transform: scale(110%);
+    transform: scale(1.1);
 }
 
 .foot-mid span {
@@ -576,6 +576,6 @@ footer i:hover {
     }
 
     footer img {
-        transform: scale(75%);
+        transform: scale(0.75);
     }
 }
