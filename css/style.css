@@ -509,6 +509,10 @@ footer i:hover {
     .foot-right i {
         padding: 0 5px;
     }
+
+    .foot-left i {
+        padding-left: 0;
+    }
 }
 
 /* *************************************************************
@@ -571,4 +575,7 @@ footer i:hover {
         margin: auto;
     }
 
+    footer img {
+        transform: scale(75%);
+    }
 }
